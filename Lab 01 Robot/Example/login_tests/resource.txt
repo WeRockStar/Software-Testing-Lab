@@ -41,6 +41,13 @@ Input Password
 Submit Credentials
     Click Button    login_button
 
+Submit Logout
+    Click Button    login_button
+
 Welcome Page Should Be Open
     Location Should Be    ${WELCOME URL}
     Title Should Be    Welcome Page
+
+Error Page Should Be Open
+    Location Should Be    ${ERROR URL}
+    Title Should Be    Error Page

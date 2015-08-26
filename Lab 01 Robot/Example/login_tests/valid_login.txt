@@ -11,5 +11,30 @@ Valid Login
     Input Username    demo
     Input Password    mode
     Submit Credentials
-    Welcome Page Should Be Open
-    [Teardown]    Close Browser
+    Welcome Page Should Be Open      
+	
+Test Demo Login USERNAME EMPTY
+    Go To Login Page    
+    Input Password    mode
+    Submit Credentials
+    Error Page Should Be Open
+	
+Test Demo Login EMPTY
+    Go To Login Page        
+    Submit Credentials
+    Error Page Should Be Open
+
+Test Demo Login PASSWORD EMPTY
+    Go To Login Page    
+    Input Username    demo
+    Submit Credentials
+    Error Page Should Be Open
+
+Test Demo Login INVALID
+    Go To Login Page  
+	Input Username    demofail
+    Input Password    mode
+    Submit Credentials
+    Error Page Should Be Open
+	
+
