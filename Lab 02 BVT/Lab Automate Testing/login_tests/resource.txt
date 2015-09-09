@@ -1,0 +1,49 @@
+*** Settings ***
+Documentation     A resource file with reusable keywords and variables.
+...
+...               The system specific keywords created here form our own
+...               domain specific language. They utilize keywords provided
+...               by the imported Selenium2Library.
+Library           Selenium2Library
+
+*** Variables ***
+${SERVER}         localhost
+${BROWSER}        Chrome
+${DELAY}          0
+${VALID USER}     demo
+${VALID PASSWORD}    mode
+${LOGIN URL}      http://${SERVER}/triangle/triangle.php.php
+${WELCOME URL}    http://${SERVER}/triangle/triangle.php.php
+${ERROR URL}      http://${SERVER}/error.html
+
+*** Keywords ***
+Open Browser To Triangle
+    Open Browser    http://${SERVER}/triangle/triangle.php.php    ${BROWSER}
+    Maximize Browser Window
+    Set Selenium Speed    ${DELAY}
+    Triangle Should Be Open
+
+Triangle Should Be Open
+    Title Should Be    Triangle
+
+Go To Triangle
+    Go To    http://${SERVER}/triangle/triangle.php.php
+    Triangle Should Be Open
+
+Input SideA
+    [Arguments]    ${sideA}
+    Input Text    sideA    ${sideA}
+
+Input SideB
+    [Arguments]    ${sideB}
+    Input Text    sideB    ${sideB}
+
+Input SideC
+    [Arguments]    ${sideC}
+    Input Text    sideC    ${sideC}
+
+Submit Credentials
+    Click Button    check_button
+
+CheckTriangle Should Be Open
+    Location Should Be    http://localhost/triangle/checktriangle.php

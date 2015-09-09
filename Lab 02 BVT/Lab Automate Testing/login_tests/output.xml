@@ -1,0 +1,2005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150909 17:29:16.981" generator="Robot 2.9.1 (Python 2.7.10 on win32)">
+<suite source="C:\xampp\htdocs\triangle\Lab Automate Testing\login_tests\valid_login.txt" id="s1" name="Valid Login">
+<test id="s1-t1" name="BV1">
+<kw name="Open Browser To Triangle" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:17.137" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:22.028" starttime="20150909 17:29:17.137"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150909 17:29:22.202" starttime="20150909 17:29:22.029"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150909 17:29:22.202" starttime="20150909 17:29:22.202"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.202" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:22.202" starttime="20150909 17:29:22.202"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.202" starttime="20150909 17:29:22.202"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.202" starttime="20150909 17:29:17.121"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.218" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:22.314" starttime="20150909 17:29:22.218"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.315" starttime="20150909 17:29:22.202"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.317" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:22.414" starttime="20150909 17:29:22.317"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.415" starttime="20150909 17:29:22.316"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.418" level="INFO">Typing text '1' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:22.502" starttime="20150909 17:29:22.417"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.503" starttime="20150909 17:29:22.416"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.506" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:22.561" starttime="20150909 17:29:22.505"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.562" starttime="20150909 17:29:22.504"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.587" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:22.587" starttime="20150909 17:29:22.564"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.588" starttime="20150909 17:29:22.563"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.611" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:22.612" starttime="20150909 17:29:22.590"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.613" critical="yes" starttime="20150909 17:29:17.121"></status>
+</test>
+<test id="s1-t2" name="BV2">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.616" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:22.632" starttime="20150909 17:29:22.616"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.642" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:22.642" starttime="20150909 17:29:22.633"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.643" starttime="20150909 17:29:22.633"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.644" starttime="20150909 17:29:22.615"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.646" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:22.736" starttime="20150909 17:29:22.646"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.737" starttime="20150909 17:29:22.645"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.740" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:22.818" starttime="20150909 17:29:22.739"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.819" starttime="20150909 17:29:22.738"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>2</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.822" level="INFO">Typing text '2' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:22.905" starttime="20150909 17:29:22.821"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.906" starttime="20150909 17:29:22.820"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.910" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:22.962" starttime="20150909 17:29:22.909"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.964" starttime="20150909 17:29:22.908"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:22.983" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:22.983" starttime="20150909 17:29:22.966"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:22.984" starttime="20150909 17:29:22.965"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.005" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:23.005" starttime="20150909 17:29:22.985"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.006" critical="yes" starttime="20150909 17:29:22.614"></status>
+</test>
+<test id="s1-t3" name="BV3">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.011" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:23.030" starttime="20150909 17:29:23.010"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.036" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:23.037" starttime="20150909 17:29:23.031"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.037" starttime="20150909 17:29:23.030"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.038" starttime="20150909 17:29:23.009"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.042" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:23.122" starttime="20150909 17:29:23.041"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.123" starttime="20150909 17:29:23.039"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.125" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:23.202" starttime="20150909 17:29:23.125"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.203" starttime="20150909 17:29:23.123"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>199</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.205" level="INFO">Typing text '199' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:23.291" starttime="20150909 17:29:23.205"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.292" starttime="20150909 17:29:23.204"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.295" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:23.340" starttime="20150909 17:29:23.295"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.341" starttime="20150909 17:29:23.294"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.408" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:23.409" starttime="20150909 17:29:23.343"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.409" starttime="20150909 17:29:23.342"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.421" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:23.422" starttime="20150909 17:29:23.410"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.422" critical="yes" starttime="20150909 17:29:23.008"></status>
+</test>
+<test id="s1-t4" name="BV4">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.426" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:23.442" starttime="20150909 17:29:23.426"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.449" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:23.449" starttime="20150909 17:29:23.444"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.450" starttime="20150909 17:29:23.443"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.451" starttime="20150909 17:29:23.425"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.453" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:23.533" starttime="20150909 17:29:23.452"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.534" starttime="20150909 17:29:23.451"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.537" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:23.616" starttime="20150909 17:29:23.536"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.617" starttime="20150909 17:29:23.535"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>200</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.620" level="INFO">Typing text '200' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:23.696" starttime="20150909 17:29:23.619"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.697" starttime="20150909 17:29:23.618"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.700" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:23.746" starttime="20150909 17:29:23.699"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.747" starttime="20150909 17:29:23.698"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.772" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:23.772" starttime="20150909 17:29:23.748"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:23.773" starttime="20150909 17:29:23.748"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Not a triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:23.816" level="INFO">&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;
+&lt;title&gt;chektriangle&lt;/title&gt;
+&lt;link href="demo.css" media="all" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Result is &lt;/h1&gt;
+&lt;table id="result"&gt;
+&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+
+Isosceles
+&lt;/td&gt;
+
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20150909 17:29:24.009" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150909 17:29:24.010" starttime="20150909 17:29:23.817"></status>
+</kw>
+<msg timestamp="20150909 17:29:24.011" level="FAIL">Page should have contained text 'Not a triangle' but did not</msg>
+<status status="FAIL" endtime="20150909 17:29:24.011" starttime="20150909 17:29:23.774"></status>
+</kw>
+<status status="FAIL" endtime="20150909 17:29:24.012" critical="yes" starttime="20150909 17:29:23.424">Page should have contained text 'Not a triangle' but did not</status>
+</test>
+<test id="s1-t5" name="BV5">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.016" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:24.031" starttime="20150909 17:29:24.015"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.038" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.039" starttime="20150909 17:29:24.032"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.039" starttime="20150909 17:29:24.031"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.040" starttime="20150909 17:29:24.015"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.042" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:24.124" starttime="20150909 17:29:24.042"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.125" starttime="20150909 17:29:24.040"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.128" level="INFO">Typing text '1' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:24.211" starttime="20150909 17:29:24.127"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.212" starttime="20150909 17:29:24.126"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.215" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:24.294" starttime="20150909 17:29:24.215"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.295" starttime="20150909 17:29:24.213"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.297" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.342" starttime="20150909 17:29:24.297"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.343" starttime="20150909 17:29:24.296"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.361" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.362" starttime="20150909 17:29:24.345"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.363" starttime="20150909 17:29:24.344"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.375" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.376" starttime="20150909 17:29:24.364"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.376" critical="yes" starttime="20150909 17:29:24.014"></status>
+</test>
+<test id="s1-t6" name="BV6">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.380" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:24.397" starttime="20150909 17:29:24.379"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.403" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.404" starttime="20150909 17:29:24.398"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.405" starttime="20150909 17:29:24.397"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.406" starttime="20150909 17:29:24.378"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.408" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:24.487" starttime="20150909 17:29:24.407"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.488" starttime="20150909 17:29:24.406"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>2</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.490" level="INFO">Typing text '2' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:24.565" starttime="20150909 17:29:24.489"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.565" starttime="20150909 17:29:24.488"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.568" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:24.646" starttime="20150909 17:29:24.567"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.647" starttime="20150909 17:29:24.566"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.649" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.696" starttime="20150909 17:29:24.648"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.697" starttime="20150909 17:29:24.648"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.715" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.715" starttime="20150909 17:29:24.699"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.716" starttime="20150909 17:29:24.698"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.728" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.729" starttime="20150909 17:29:24.716"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.730" critical="yes" starttime="20150909 17:29:24.378"></status>
+</test>
+<test id="s1-t7" name="BV7">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.735" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:24.754" starttime="20150909 17:29:24.734"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.761" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:24.761" starttime="20150909 17:29:24.755"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.762" starttime="20150909 17:29:24.754"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.763" starttime="20150909 17:29:24.733"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.766" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:24.875" starttime="20150909 17:29:24.765"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.876" starttime="20150909 17:29:24.764"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.879" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:24.958" starttime="20150909 17:29:24.878"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:24.959" starttime="20150909 17:29:24.877"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:24.963" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:25.040" starttime="20150909 17:29:24.962"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.041" starttime="20150909 17:29:24.960"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.049" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.094" starttime="20150909 17:29:25.048"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.095" starttime="20150909 17:29:25.044"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.113" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.114" starttime="20150909 17:29:25.103"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.115" starttime="20150909 17:29:25.101"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Equilateral</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.136" level="INFO">Current page contains text 'Equilateral'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.137" starttime="20150909 17:29:25.116"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.137" critical="yes" starttime="20150909 17:29:24.732"></status>
+</test>
+<test id="s1-t8" name="BV8">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.141" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:25.157" starttime="20150909 17:29:25.140"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.165" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.166" starttime="20150909 17:29:25.158"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.167" starttime="20150909 17:29:25.157"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.167" starttime="20150909 17:29:25.139"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.169" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:25.250" starttime="20150909 17:29:25.169"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.250" starttime="20150909 17:29:25.168"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>199</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.253" level="INFO">Typing text '199' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:25.330" starttime="20150909 17:29:25.252"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.331" starttime="20150909 17:29:25.251"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.334" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:25.414" starttime="20150909 17:29:25.333"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.415" starttime="20150909 17:29:25.332"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.419" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.465" starttime="20150909 17:29:25.418"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.466" starttime="20150909 17:29:25.416"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.484" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.485" starttime="20150909 17:29:25.469"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.485" starttime="20150909 17:29:25.467"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.498" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.499" starttime="20150909 17:29:25.486"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.500" critical="yes" starttime="20150909 17:29:25.138"></status>
+</test>
+<test id="s1-t9" name="BV9">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.503" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:25.519" starttime="20150909 17:29:25.503"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.525" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.525" starttime="20150909 17:29:25.520"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.526" starttime="20150909 17:29:25.519"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.527" starttime="20150909 17:29:25.502"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.530" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:25.611" starttime="20150909 17:29:25.529"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.612" starttime="20150909 17:29:25.527"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>200</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.614" level="INFO">Typing text '200' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:25.694" starttime="20150909 17:29:25.614"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.694" starttime="20150909 17:29:25.613"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.698" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:25.775" starttime="20150909 17:29:25.697"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.776" starttime="20150909 17:29:25.695"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.780" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.826" starttime="20150909 17:29:25.778"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.827" starttime="20150909 17:29:25.777"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.843" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:25.844" starttime="20150909 17:29:25.829"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:25.845" starttime="20150909 17:29:25.827"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Not a traingle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:25.886" level="INFO">&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;
+&lt;title&gt;chektriangle&lt;/title&gt;
+&lt;link href="demo.css" media="all" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Result is &lt;/h1&gt;
+&lt;table id="result"&gt;
+&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+
+Not a triangle
+&lt;/td&gt;
+
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20150909 17:29:26.010" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150909 17:29:26.010" starttime="20150909 17:29:25.886"></status>
+</kw>
+<msg timestamp="20150909 17:29:26.010" level="FAIL">Page should have contained text 'Not a traingle' but did not</msg>
+<status status="FAIL" endtime="20150909 17:29:26.010" starttime="20150909 17:29:25.845"></status>
+</kw>
+<status status="FAIL" endtime="20150909 17:29:26.010" critical="yes" starttime="20150909 17:29:25.501">Page should have contained text 'Not a traingle' but did not</status>
+</test>
+<test id="s1-t10" name="BV10">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.010" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:26.037" starttime="20150909 17:29:26.010"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.043" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.044" starttime="20150909 17:29:26.038"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.045" starttime="20150909 17:29:26.037"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.045" starttime="20150909 17:29:26.010"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.049" level="INFO">Typing text '1' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:26.146" starttime="20150909 17:29:26.047"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.147" starttime="20150909 17:29:26.046"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.151" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:26.230" starttime="20150909 17:29:26.149"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.231" starttime="20150909 17:29:26.148"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.234" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:26.309" starttime="20150909 17:29:26.233"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.311" starttime="20150909 17:29:26.232"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.313" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.358" starttime="20150909 17:29:26.312"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.359" starttime="20150909 17:29:26.311"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.418" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.419" starttime="20150909 17:29:26.361"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.420" starttime="20150909 17:29:26.359"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.433" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.434" starttime="20150909 17:29:26.421"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.435" critical="yes" starttime="20150909 17:29:26.010"></status>
+</test>
+<test id="s1-t11" name="BV11">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.439" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:26.456" starttime="20150909 17:29:26.439"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.462" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.463" starttime="20150909 17:29:26.457"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.465" starttime="20150909 17:29:26.456"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.466" starttime="20150909 17:29:26.438"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>2</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.471" level="INFO">Typing text '2' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:26.552" starttime="20150909 17:29:26.470"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.553" starttime="20150909 17:29:26.468"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.555" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:26.636" starttime="20150909 17:29:26.554"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.637" starttime="20150909 17:29:26.554"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.639" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:26.723" starttime="20150909 17:29:26.638"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.724" starttime="20150909 17:29:26.637"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.726" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.773" starttime="20150909 17:29:26.726"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.774" starttime="20150909 17:29:26.725"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.793" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.793" starttime="20150909 17:29:26.776"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.794" starttime="20150909 17:29:26.775"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.807" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.807" starttime="20150909 17:29:26.794"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.808" critical="yes" starttime="20150909 17:29:26.437"></status>
+</test>
+<test id="s1-t12" name="BV12">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.811" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:26.827" starttime="20150909 17:29:26.811"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.834" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:26.835" starttime="20150909 17:29:26.828"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.836" starttime="20150909 17:29:26.828"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.837" starttime="20150909 17:29:26.810"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>199</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.840" level="INFO">Typing text '199' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:26.924" starttime="20150909 17:29:26.840"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:26.925" starttime="20150909 17:29:26.838"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:26.927" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:27.008" starttime="20150909 17:29:26.926"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.009" starttime="20150909 17:29:26.925"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.012" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:27.090" starttime="20150909 17:29:27.011"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.091" starttime="20150909 17:29:27.010"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.094" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.141" starttime="20150909 17:29:27.093"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.142" starttime="20150909 17:29:27.092"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.160" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.161" starttime="20150909 17:29:27.145"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.161" starttime="20150909 17:29:27.143"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Isosceles</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.174" level="INFO">Current page contains text 'Isosceles'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.175" starttime="20150909 17:29:27.162"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.176" critical="yes" starttime="20150909 17:29:26.809"></status>
+</test>
+<test id="s1-t13" name="BV13">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.179" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:27.196" starttime="20150909 17:29:27.178"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.204" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.205" starttime="20150909 17:29:27.197"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.205" starttime="20150909 17:29:27.196"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.206" starttime="20150909 17:29:27.178"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>200</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.208" level="INFO">Typing text '200' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:27.309" starttime="20150909 17:29:27.207"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.309" starttime="20150909 17:29:27.206"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.312" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:27.388" starttime="20150909 17:29:27.311"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.389" starttime="20150909 17:29:27.310"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.391" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:27.469" starttime="20150909 17:29:27.390"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.470" starttime="20150909 17:29:27.389"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.472" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.518" starttime="20150909 17:29:27.472"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.519" starttime="20150909 17:29:27.471"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.536" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.537" starttime="20150909 17:29:27.521"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.537" starttime="20150909 17:29:27.520"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Not a triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.558" level="INFO">Current page contains text 'Not a triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.559" starttime="20150909 17:29:27.538"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.559" critical="yes" starttime="20150909 17:29:27.177"></status>
+</test>
+<test id="s1-t14" name="RT1">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.568" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:27.584" starttime="20150909 17:29:27.566"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.593" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.593" starttime="20150909 17:29:27.587"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.594" starttime="20150909 17:29:27.585"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.594" starttime="20150909 17:29:27.564"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.596" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:27.677" starttime="20150909 17:29:27.596"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.678" starttime="20150909 17:29:27.595"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.680" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:27.759" starttime="20150909 17:29:27.679"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.760" starttime="20150909 17:29:27.678"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>0</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.764" level="INFO">Typing text '0' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:27.846" starttime="20150909 17:29:27.762"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.847" starttime="20150909 17:29:27.761"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.850" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.895" starttime="20150909 17:29:27.849"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.896" starttime="20150909 17:29:27.848"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:27.926" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:27.927" starttime="20150909 17:29:27.898"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:27.928" starttime="20150909 17:29:27.897"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Out of range</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20150909 17:29:28.049" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150909 17:29:28.049" starttime="20150909 17:29:27.931"></status>
+</kw>
+<msg timestamp="20150909 17:29:28.049" level="FAIL">There were no alerts</msg>
+<status status="FAIL" endtime="20150909 17:29:28.049" starttime="20150909 17:29:27.928"></status>
+</kw>
+<status status="FAIL" endtime="20150909 17:29:28.049" critical="yes" starttime="20150909 17:29:27.561">There were no alerts</status>
+</test>
+<test id="s1-t15" name="RT2">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.064" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:28.081" starttime="20150909 17:29:28.064"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.091" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:28.091" starttime="20150909 17:29:28.083"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.092" starttime="20150909 17:29:28.082"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.092" starttime="20150909 17:29:28.064"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.095" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:28.176" starttime="20150909 17:29:28.094"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.177" starttime="20150909 17:29:28.093"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>0</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.179" level="INFO">Typing text '0' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:28.255" starttime="20150909 17:29:28.178"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.256" starttime="20150909 17:29:28.177"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.259" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:28.338" starttime="20150909 17:29:28.258"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.339" starttime="20150909 17:29:28.257"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.342" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:28.389" starttime="20150909 17:29:28.341"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.390" starttime="20150909 17:29:28.340"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.409" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:28.409" starttime="20150909 17:29:28.392"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.410" starttime="20150909 17:29:28.391"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Out of range</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20150909 17:29:28.546" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150909 17:29:28.546" starttime="20150909 17:29:28.413"></status>
+</kw>
+<msg timestamp="20150909 17:29:28.547" level="FAIL">There were no alerts</msg>
+<status status="FAIL" endtime="20150909 17:29:28.547" starttime="20150909 17:29:28.410"></status>
+</kw>
+<status status="FAIL" endtime="20150909 17:29:28.548" critical="yes" starttime="20150909 17:29:28.049">There were no alerts</status>
+</test>
+<test id="s1-t16" name="RT3">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.552" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:28.568" starttime="20150909 17:29:28.551"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.576" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:28.577" starttime="20150909 17:29:28.569"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.577" starttime="20150909 17:29:28.568"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.578" starttime="20150909 17:29:28.550"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>0</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.580" level="INFO">Typing text '0' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:28.679" starttime="20150909 17:29:28.580"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.680" starttime="20150909 17:29:28.579"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.683" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:28.759" starttime="20150909 17:29:28.682"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.760" starttime="20150909 17:29:28.681"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.763" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:28.842" starttime="20150909 17:29:28.762"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.843" starttime="20150909 17:29:28.761"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.846" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:28.890" starttime="20150909 17:29:28.845"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.891" starttime="20150909 17:29:28.844"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:28.910" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:28.911" starttime="20150909 17:29:28.894"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:28.911" starttime="20150909 17:29:28.892"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Out of range</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20150909 17:29:29.033" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150909 17:29:29.033" starttime="20150909 17:29:28.914"></status>
+</kw>
+<msg timestamp="20150909 17:29:29.033" level="FAIL">There were no alerts</msg>
+<status status="FAIL" endtime="20150909 17:29:29.033" starttime="20150909 17:29:28.912"></status>
+</kw>
+<status status="FAIL" endtime="20150909 17:29:29.033" critical="yes" starttime="20150909 17:29:28.549">There were no alerts</status>
+</test>
+<test id="s1-t17" name="RT4">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.033" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:29.063" starttime="20150909 17:29:29.033"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.071" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:29.071" starttime="20150909 17:29:29.065"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.072" starttime="20150909 17:29:29.064"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.073" starttime="20150909 17:29:29.033"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.076" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:29.154" starttime="20150909 17:29:29.075"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.155" starttime="20150909 17:29:29.074"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.158" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:29.235" starttime="20150909 17:29:29.157"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.236" starttime="20150909 17:29:29.156"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>201</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.240" level="INFO">Typing text '201' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:29.315" starttime="20150909 17:29:29.239"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.316" starttime="20150909 17:29:29.237"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.319" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:29.365" starttime="20150909 17:29:29.318"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.366" starttime="20150909 17:29:29.317"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.384" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:29.384" starttime="20150909 17:29:29.369"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.385" starttime="20150909 17:29:29.367"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Out of range</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20150909 17:29:29.512" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150909 17:29:29.512" starttime="20150909 17:29:29.389"></status>
+</kw>
+<msg timestamp="20150909 17:29:29.512" level="FAIL">There were no alerts</msg>
+<status status="FAIL" endtime="20150909 17:29:29.512" starttime="20150909 17:29:29.386"></status>
+</kw>
+<status status="FAIL" endtime="20150909 17:29:29.512" critical="yes" starttime="20150909 17:29:29.033">There were no alerts</status>
+</test>
+<test id="s1-t18" name="RT5">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.512" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:29.538" starttime="20150909 17:29:29.512"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.546" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:29.547" starttime="20150909 17:29:29.540"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.547" starttime="20150909 17:29:29.538"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.548" starttime="20150909 17:29:29.512"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.550" level="INFO">Typing text '100' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:29.630" starttime="20150909 17:29:29.550"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.631" starttime="20150909 17:29:29.549"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>201</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.633" level="INFO">Typing text '201' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:29.711" starttime="20150909 17:29:29.632"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.712" starttime="20150909 17:29:29.631"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.714" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:29.793" starttime="20150909 17:29:29.714"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.794" starttime="20150909 17:29:29.713"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.798" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:29.843" starttime="20150909 17:29:29.797"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.844" starttime="20150909 17:29:29.795"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.862" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:29.862" starttime="20150909 17:29:29.846"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:29.863" starttime="20150909 17:29:29.845"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Out of range</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20150909 17:29:29.983" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150909 17:29:29.983" starttime="20150909 17:29:29.866"></status>
+</kw>
+<msg timestamp="20150909 17:29:29.983" level="FAIL">There were no alerts</msg>
+<status status="FAIL" endtime="20150909 17:29:29.983" starttime="20150909 17:29:29.863"></status>
+</kw>
+<status status="FAIL" endtime="20150909 17:29:29.983" critical="yes" starttime="20150909 17:29:29.512">There were no alerts</status>
+</test>
+<test id="s1-t19" name="RT6">
+<kw name="Go To Triangle" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://${SERVER}/triangle/triangle.php.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:29.983" level="INFO">Opening url 'http://localhost/triangle/triangle.php.php'</msg>
+<status status="PASS" endtime="20150909 17:29:30.011" starttime="20150909 17:29:29.983"></status>
+</kw>
+<kw name="Triangle Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Triangle</arg>
+</arguments>
+<msg timestamp="20150909 17:29:30.018" level="INFO">Page title is 'Triangle'.</msg>
+<status status="PASS" endtime="20150909 17:29:30.019" starttime="20150909 17:29:30.013"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:30.019" starttime="20150909 17:29:30.011"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:30.020" starttime="20150909 17:29:29.983"></status>
+</kw>
+<kw name="Input SideA" library="resource">
+<arguments>
+<arg>201</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideA</arg>
+<arg>${sideA}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:30.022" level="INFO">Typing text '201' into text field 'sideA'</msg>
+<status status="PASS" endtime="20150909 17:29:30.117" starttime="20150909 17:29:30.021"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:30.119" starttime="20150909 17:29:30.021"></status>
+</kw>
+<kw name="Input SideB" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideB</arg>
+<arg>${sideB}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:30.122" level="INFO">Typing text '100' into text field 'sideB'</msg>
+<status status="PASS" endtime="20150909 17:29:30.199" starttime="20150909 17:29:30.120"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:30.200" starttime="20150909 17:29:30.119"></status>
+</kw>
+<kw name="Input SideC" library="resource">
+<arguments>
+<arg>100</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>sideC</arg>
+<arg>${sideC}</arg>
+</arguments>
+<msg timestamp="20150909 17:29:30.203" level="INFO">Typing text '100' into text field 'sideC'</msg>
+<status status="PASS" endtime="20150909 17:29:30.279" starttime="20150909 17:29:30.202"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:30.280" starttime="20150909 17:29:30.201"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>check_button</arg>
+</arguments>
+<msg timestamp="20150909 17:29:30.283" level="INFO">Clicking button 'check_button'.</msg>
+<status status="PASS" endtime="20150909 17:29:30.328" starttime="20150909 17:29:30.282"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:30.329" starttime="20150909 17:29:30.281"></status>
+</kw>
+<kw name="CheckTriangle Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://localhost/triangle/checktriangle.php</arg>
+</arguments>
+<msg timestamp="20150909 17:29:30.346" level="INFO">Current location is 'http://localhost/triangle/checktriangle.php'.</msg>
+<status status="PASS" endtime="20150909 17:29:30.346" starttime="20150909 17:29:30.332"></status>
+</kw>
+<status status="PASS" endtime="20150909 17:29:30.347" starttime="20150909 17:29:30.330"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Out of range</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20150909 17:29:30.473" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150909 17:29:30.473" starttime="20150909 17:29:30.350"></status>
+</kw>
+<msg timestamp="20150909 17:29:30.473" level="FAIL">There were no alerts</msg>
+<status status="FAIL" endtime="20150909 17:29:30.473" starttime="20150909 17:29:30.348"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150909 17:29:31.750" starttime="20150909 17:29:30.473"></status>
+</kw>
+<status status="FAIL" endtime="20150909 17:29:31.750" critical="yes" starttime="20150909 17:29:29.983">There were no alerts</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20150909 17:29:31.765" starttime="20150909 17:29:16.996"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="8" pass="11">Critical Tests</stat>
+<stat fail="8" pass="11">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="8" id="s1" name="Valid Login" pass="11">Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

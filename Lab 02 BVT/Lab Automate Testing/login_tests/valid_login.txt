@@ -1,0 +1,177 @@
+*** Settings ***
+Documentation     A test suite with a single test for valid login.
+...
+...               This test has a workflow that is created using keywords in
+...               the imported resource file.
+Resource          resource.txt
+
+*** Test Cases ***
+BV1
+    Open Browser To Triangle
+    Input SideA    100
+    Input SideB    100
+    Input SideC    1
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles    
+BV2
+    Go To Triangle
+    Input SideA    100
+    Input SideB    100
+    Input SideC    2
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles
+  
+BV3
+    Go To Triangle
+    Input SideA    100
+    Input SideB    100
+    Input SideC    199
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles
+   
+BV4
+    Go To Triangle
+    Input SideA    100
+    Input SideB    100
+    Input SideC    200
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Not a triangle
+    
+BV5
+    Go To Triangle
+    Input SideA    100
+    Input SideB    1
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles
+BV6
+    Go To Triangle
+    Input SideA    100
+    Input SideB    2
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles
+    
+BV7
+    Go To Triangle
+    Input SideA    100
+    Input SideB    100
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Equilateral
+    
+BV8
+    Go To Triangle
+    Input SideA    100
+    Input SideB    199
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles
+   
+BV9
+    Go To Triangle
+    Input SideA    100
+    Input SideB    200
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Not a traingle
+    
+BV10
+    Go To Triangle
+    Input SideA    1
+    Input SideB    100
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles
+      
+BV11
+    Go To Triangle
+    Input SideA    2
+    Input SideB    100
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles
+     
+BV12
+    Go To Triangle
+    Input SideA    199
+    Input SideB    100
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Isosceles
+    
+BV13
+    Go To Triangle
+    Input SideA    200
+    Input SideB    100
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Page Should Contain    Not a triangle
+   
+RT1
+    Go To Triangle
+    Input SideA    100
+    Input SideB    100
+    Input SideC    0
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Get Alert Message    Out of range
+   
+RT2
+    Go To Triangle
+    Input SideA    100
+    Input SideB    0
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Get Alert Message    Out of range
+   
+RT3
+    Go To Triangle
+    Input SideA    0
+    Input SideB    100
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Get Alert Message    Out of range
+       
+RT4
+    Go To Triangle
+    Input SideA    100
+    Input SideB    100
+    Input SideC    201
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Get Alert Message    Out of range
+      
+RT5
+    Go To Triangle
+    Input SideA    100
+    Input SideB    201
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Get Alert Message    Out of range
+   
+RT6
+    Go To Triangle
+    Input SideA    201
+    Input SideB    100
+    Input SideC    100
+    Submit Credentials
+    CheckTriangle Should Be Open
+    Get Alert Message    Out of range
+    [Teardown]    Close Browser    
