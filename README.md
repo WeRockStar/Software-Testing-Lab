@@ -5,4 +5,6 @@
  - Pip
  - Selenium2Library
 
-##### LAB 02 Robot Automate Testing (Check Triangle)
+##### LAB 02 Robot Automate Testing 
+ - Boundary Value Analysis
+ - Robustness Test
