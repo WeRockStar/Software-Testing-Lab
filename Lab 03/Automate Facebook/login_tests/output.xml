@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150923 17:08:55.974" generator="Robot 2.9.1 (Python 2.7.10 on win32)">
+<suite source="E:\Code\Software Testing Lab\Lab 03\Automate Facebook\login_tests\facebook.txt" id="s1" name="Facebook">
+<test id="s1-t1" name="FacebookLoginInvalid1">
+<kw name="Open Browser To Facebook" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.facebook.com/login.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150923 17:08:56.131" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/login.php'</msg>
+<status status="PASS" endtime="20150923 17:09:04.794" starttime="20150923 17:08:56.130"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150923 17:09:04.962" starttime="20150923 17:09:04.795"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150923 17:09:04.964" starttime="20150923 17:09:04.963"></status>
+</kw>
+<kw name="Facebook Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>เข้าสู่ระบบ Facebook | Facebook</arg>
+</arguments>
+<msg timestamp="20150923 17:09:04.971" level="INFO">Page title is 'เข้าสู่ระบบ Facebook | Facebook'.</msg>
+<status status="PASS" endtime="20150923 17:09:04.971" starttime="20150923 17:09:04.965"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:04.972" starttime="20150923 17:09:04.964"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:04.973" starttime="20150923 17:08:56.129"></status>
+</kw>
+<kw name="Input email" library="resource">
+<arguments>
+<arg>demo@hotmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:04.976" level="INFO">Typing text 'demo@hotmail.com' into text field 'email'</msg>
+<status status="PASS" endtime="20150923 17:09:05.077" starttime="20150923 17:09:04.975"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:05.078" starttime="20150923 17:09:04.974"></status>
+</kw>
+<kw name="Input pass" library="resource">
+<arguments>
+<arg>123</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pass</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:05.080" level="INFO">Typing text '123' into text field 'pass'</msg>
+<status status="PASS" endtime="20150923 17:09:05.200" starttime="20150923 17:09:05.080"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:05.201" starttime="20150923 17:09:05.079"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>u_0_2</arg>
+</arguments>
+<msg timestamp="20150923 17:09:05.206" level="INFO">Clicking button 'u_0_2'.</msg>
+<status status="PASS" endtime="20150923 17:09:05.270" starttime="20150923 17:09:05.205"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:05.271" starttime="20150923 17:09:05.203"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${MESSAGE}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:06.381" level="INFO">Current page contains text 'ลงชื่อเข้าใช้ Facebook'.</msg>
+<status status="PASS" endtime="20150923 17:09:06.382" starttime="20150923 17:09:05.273"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150923 17:09:07.625" starttime="20150923 17:09:06.384"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:07.626" critical="yes" starttime="20150923 17:08:56.128"></status>
+</test>
+<test id="s1-t2" name="FacebookLoginInvalid2">
+<kw name="Open Browser To Facebook" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.facebook.com/login.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:07.631" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/login.php'</msg>
+<status status="PASS" endtime="20150923 17:09:14.838" starttime="20150923 17:09:07.631"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150923 17:09:15.031" starttime="20150923 17:09:14.839"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150923 17:09:15.033" starttime="20150923 17:09:15.032"></status>
+</kw>
+<kw name="Facebook Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>เข้าสู่ระบบ Facebook | Facebook</arg>
+</arguments>
+<msg timestamp="20150923 17:09:15.290" level="INFO">Page title is 'เข้าสู่ระบบ Facebook | Facebook'.</msg>
+<status status="PASS" endtime="20150923 17:09:15.291" starttime="20150923 17:09:15.034"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:15.292" starttime="20150923 17:09:15.034"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:15.293" starttime="20150923 17:09:07.630"></status>
+</kw>
+<kw name="Input email" library="resource">
+<arguments>
+<arg>demo@hotmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:15.297" level="INFO">Typing text 'demo@hotmail.com' into text field 'email'</msg>
+<status status="PASS" endtime="20150923 17:09:15.399" starttime="20150923 17:09:15.295"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:15.400" starttime="20150923 17:09:15.294"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>u_0_2</arg>
+</arguments>
+<msg timestamp="20150923 17:09:15.402" level="INFO">Clicking button 'u_0_2'.</msg>
+<status status="PASS" endtime="20150923 17:09:15.500" starttime="20150923 17:09:15.402"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:15.501" starttime="20150923 17:09:15.401"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${MESSAGE}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:17.357" level="INFO">Current page contains text 'ลงชื่อเข้าใช้ Facebook'.</msg>
+<status status="PASS" endtime="20150923 17:09:17.358" starttime="20150923 17:09:15.503"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150923 17:09:18.609" starttime="20150923 17:09:17.360"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:18.610" critical="yes" starttime="20150923 17:09:07.629"></status>
+</test>
+<test id="s1-t3" name="FacebookLoginInvalid3">
+<kw name="Open Browser To Facebook" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.facebook.com/login.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:18.615" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/login.php'</msg>
+<status status="PASS" endtime="20150923 17:09:27.147" starttime="20150923 17:09:18.614"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150923 17:09:27.321" starttime="20150923 17:09:27.148"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150923 17:09:27.323" starttime="20150923 17:09:27.322"></status>
+</kw>
+<kw name="Facebook Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>เข้าสู่ระบบ Facebook | Facebook</arg>
+</arguments>
+<msg timestamp="20150923 17:09:27.604" level="INFO">Page title is 'เข้าสู่ระบบ Facebook | Facebook'.</msg>
+<status status="PASS" endtime="20150923 17:09:27.605" starttime="20150923 17:09:27.325"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:27.606" starttime="20150923 17:09:27.324"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:27.607" starttime="20150923 17:09:18.613"></status>
+</kw>
+<kw name="Input pass" library="resource">
+<arguments>
+<arg>123</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pass</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:27.609" level="INFO">Typing text '123' into text field 'pass'</msg>
+<status status="PASS" endtime="20150923 17:09:27.704" starttime="20150923 17:09:27.609"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:27.705" starttime="20150923 17:09:27.607"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>u_0_2</arg>
+</arguments>
+<msg timestamp="20150923 17:09:27.708" level="INFO">Clicking button 'u_0_2'.</msg>
+<status status="PASS" endtime="20150923 17:09:27.779" starttime="20150923 17:09:27.707"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:27.780" starttime="20150923 17:09:27.706"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${MESSAGE}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:29.470" level="INFO">Current page contains text 'ลงชื่อเข้าใช้ Facebook'.</msg>
+<status status="PASS" endtime="20150923 17:09:29.471" starttime="20150923 17:09:27.781"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150923 17:09:30.686" starttime="20150923 17:09:29.473"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:30.687" critical="yes" starttime="20150923 17:09:18.612"></status>
+</test>
+<test id="s1-t4" name="FacebookLoginValid">
+<kw name="Open Browser To Facebook" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.facebook.com/login.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:30.692" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/login.php'</msg>
+<status status="PASS" endtime="20150923 17:09:37.711" starttime="20150923 17:09:30.691"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150923 17:09:37.908" starttime="20150923 17:09:37.712"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150923 17:09:37.910" starttime="20150923 17:09:37.909"></status>
+</kw>
+<kw name="Facebook Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>เข้าสู่ระบบ Facebook | Facebook</arg>
+</arguments>
+<msg timestamp="20150923 17:09:38.161" level="INFO">Page title is 'เข้าสู่ระบบ Facebook | Facebook'.</msg>
+<status status="PASS" endtime="20150923 17:09:38.162" starttime="20150923 17:09:37.913"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:38.162" starttime="20150923 17:09:37.911"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:38.163" starttime="20150923 17:09:30.690"></status>
+</kw>
+<kw name="Input email" library="resource">
+<arguments>
+<arg>vr_ronaldo@hotmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:38.166" level="INFO">Typing text 'vr_ronaldo@hotmail.com' into text field 'email'</msg>
+<status status="PASS" endtime="20150923 17:09:38.273" starttime="20150923 17:09:38.165"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:38.274" starttime="20150923 17:09:38.164"></status>
+</kw>
+<kw name="Input pass" library="resource">
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pass</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20150923 17:09:38.278" level="INFO">Typing text '091300freestyle' into text field 'pass'</msg>
+<status status="PASS" endtime="20150923 17:09:38.416" starttime="20150923 17:09:38.277"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:38.417" starttime="20150923 17:09:38.275"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>u_0_2</arg>
+</arguments>
+<msg timestamp="20150923 17:09:38.420" level="INFO">Clicking button 'u_0_2'.</msg>
+<status status="PASS" endtime="20150923 17:09:38.497" starttime="20150923 17:09:38.419"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:38.499" starttime="20150923 17:09:38.418"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150923 17:09:39.723" starttime="20150923 17:09:38.500"></status>
+</kw>
+<status status="PASS" endtime="20150923 17:09:39.724" critical="yes" starttime="20150923 17:09:30.689"></status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" endtime="20150923 17:09:39.727" starttime="20150923 17:08:55.977"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Facebook" pass="4">Facebook</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

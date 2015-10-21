@@ -1,0 +1,32 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class UnitTest {
+
+	@Test
+	public void testTypical() { // test a typical value in partitions EC
+		assertEquals('A', Grade.getLetterGrade(80));
+		assertEquals('B', Grade.getLetterGrade(72));
+		assertEquals('C', Grade.getLetterGrade(55));
+		assertEquals('F', Grade.getLetterGrade(20));
+	}
+	
+	@Test
+	public void testEC() {   // test the boundaries of the partitions EC
+	assertEquals('A', Grade.getLetterGrade(100));
+	assertEquals('A', Grade.getLetterGrade(75)); 
+	assertEquals('B', Grade.getLetterGrade(74));
+	assertEquals('B', Grade.getLetterGrade(60));
+	assertEquals('C', Grade.getLetterGrade(59));
+	assertEquals('C', Grade.getLetterGrade(50));
+	assertEquals('D', Grade.getLetterGrade(49));
+	assertEquals('D', Grade.getLetterGrade(30));
+	assertEquals('F', Grade.getLetterGrade(29));
+	assertEquals('F', Grade.getLetterGrade(0));
+	}
+
+}
+
+
+}

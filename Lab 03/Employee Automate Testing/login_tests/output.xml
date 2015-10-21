@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150930 17:25:51.561" generator="Robot 2.9.1 (Python 2.7.10 on win32)">
+<suite source="E:\Code\Software Testing Lab\Lab 03\Employee Automate Testing\login_tests\employee.txt" id="s1" name="Employee">
+<test id="s1-t1" name="EmployeeTest">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:25:51.723" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:25:59.725" starttime="20150930 17:25:51.722"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:25:59.779" starttime="20150930 17:25:59.726"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:25:59.781" starttime="20150930 17:25:59.779"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:25:59.798" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:25:59.799" starttime="20150930 17:25:59.782"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:25:59.800" starttime="20150930 17:25:59.781"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:25:59.801" starttime="20150930 17:25:51.721"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:25:59.803" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:26:00.004" starttime="20150930 17:25:59.803"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:00.008" starttime="20150930 17:25:59.802"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:00.077" starttime="20150930 17:26:00.009"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:26:00.243" starttime="20150930 17:26:00.078"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:00.244" critical="yes" starttime="20150930 17:25:51.720"></status>
+</test>
+<test id="s1-t2" name="EmployeeTest2">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:00.247" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:26:07.879" starttime="20150930 17:26:00.246"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:26:07.935" starttime="20150930 17:26:07.879"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:07.937" starttime="20150930 17:26:07.936"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:26:07.962" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:26:07.963" starttime="20150930 17:26:07.940"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:07.964" starttime="20150930 17:26:07.939"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:07.965" starttime="20150930 17:26:00.246"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>50000</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:07.968" level="INFO">Typing text '50000' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:26:08.180" starttime="20150930 17:26:07.968"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:08.181" starttime="20150930 17:26:07.966"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:26:08.183" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:26:08.824" starttime="20150930 17:26:08.182"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:08.825" starttime="20150930 17:26:08.181"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:08.904" starttime="20150930 17:26:08.827"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:26:09.150" starttime="20150930 17:26:08.906"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:09.150" critical="yes" starttime="20150930 17:26:00.245"></status>
+</test>
+<test id="s1-t3" name="EmployeeTest3">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:09.155" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:26:17.312" starttime="20150930 17:26:09.154"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:26:17.356" starttime="20150930 17:26:17.312"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:17.358" starttime="20150930 17:26:17.357"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:26:17.374" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:26:17.375" starttime="20150930 17:26:17.360"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:17.376" starttime="20150930 17:26:17.358"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:17.377" starttime="20150930 17:26:09.152"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>InText</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:17.380" level="INFO">Typing text 'InText' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:26:17.526" starttime="20150930 17:26:17.379"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:17.527" starttime="20150930 17:26:17.378"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:26:17.529" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:26:18.136" starttime="20150930 17:26:17.529"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:18.137" starttime="20150930 17:26:17.528"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:18.210" starttime="20150930 17:26:18.138"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:26:18.417" starttime="20150930 17:26:18.212"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:18.418" critical="yes" starttime="20150930 17:26:09.151"></status>
+</test>
+<test id="s1-t4" name="EmployeeTest4">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:18.421" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:26:25.863" starttime="20150930 17:26:18.420"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:26:25.921" starttime="20150930 17:26:25.864"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:25.923" starttime="20150930 17:26:25.922"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:26:25.976" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:26:25.976" starttime="20150930 17:26:25.924"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:25.977" starttime="20150930 17:26:25.923"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:25.977" starttime="20150930 17:26:18.420"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:25.982" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:26:26.133" starttime="20150930 17:26:25.980"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:26.134" starttime="20150930 17:26:25.979"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:26:26.136" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:26:26.913" starttime="20150930 17:26:26.136"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:26.915" starttime="20150930 17:26:26.135"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:26.981" starttime="20150930 17:26:26.921"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:26:27.224" starttime="20150930 17:26:26.982"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:27.224" critical="yes" starttime="20150930 17:26:18.419"></status>
+</test>
+<test id="s1-t5" name="EmployeeTest5">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:27.228" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:26:35.072" starttime="20150930 17:26:27.228"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:26:35.125" starttime="20150930 17:26:35.073"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:35.126" starttime="20150930 17:26:35.125"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:26:35.146" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:26:35.146" starttime="20150930 17:26:35.128"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:35.147" starttime="20150930 17:26:35.127"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:35.147" starttime="20150930 17:26:27.227"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:35.150" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:26:35.292" starttime="20150930 17:26:35.149"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:35.292" starttime="20150930 17:26:35.148"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>3000</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:35.295" level="INFO">Typing text '3000' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:26:35.865" starttime="20150930 17:26:35.294"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:35.866" starttime="20150930 17:26:35.293"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:26:35.868" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:26:36.022" starttime="20150930 17:26:35.867"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:36.022" starttime="20150930 17:26:35.867"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:36.119" starttime="20150930 17:26:36.023"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:26:36.325" starttime="20150930 17:26:36.120"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:36.325" critical="yes" starttime="20150930 17:26:27.226"></status>
+</test>
+<test id="s1-t6" name="EmployeeTest6">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:36.329" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:26:43.476" starttime="20150930 17:26:36.328"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:26:43.538" starttime="20150930 17:26:43.477"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:43.540" starttime="20150930 17:26:43.539"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:26:43.561" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:26:43.562" starttime="20150930 17:26:43.541"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:43.563" starttime="20150930 17:26:43.540"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:43.563" starttime="20150930 17:26:36.327"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:43.566" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:26:43.754" starttime="20150930 17:26:43.565"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:43.754" starttime="20150930 17:26:43.564"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>InText</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:43.757" level="INFO">Typing text 'InText' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:26:43.842" starttime="20150930 17:26:43.756"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:43.843" starttime="20150930 17:26:43.755"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:26:43.847" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:26:44.478" starttime="20150930 17:26:43.846"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:44.480" starttime="20150930 17:26:43.845"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:44.558" starttime="20150930 17:26:44.481"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:26:44.896" starttime="20150930 17:26:44.559"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:44.896" critical="yes" starttime="20150930 17:26:36.327"></status>
+</test>
+<test id="s1-t7" name="EmployeeTest7">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:44.900" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:26:52.878" starttime="20150930 17:26:44.899"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:26:52.922" starttime="20150930 17:26:52.878"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:52.923" starttime="20150930 17:26:52.922"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:26:52.943" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:26:52.944" starttime="20150930 17:26:52.924"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:52.945" starttime="20150930 17:26:52.923"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:52.946" starttime="20150930 17:26:44.898"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:26:52.949" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:26:53.148" starttime="20150930 17:26:52.948"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:53.150" starttime="20150930 17:26:52.946"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:26:53.219" starttime="20150930 17:26:53.151"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:26:53.409" starttime="20150930 17:26:53.220"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:26:53.409" critical="yes" starttime="20150930 17:26:44.897"></status>
+</test>
+<test id="s1-t8" name="EmployeeTest8">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:26:53.413" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:27:00.754" starttime="20150930 17:26:53.412"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:27:00.810" starttime="20150930 17:27:00.755"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:00.811" starttime="20150930 17:27:00.810"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:27:00.840" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:27:00.841" starttime="20150930 17:27:00.813"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:00.842" starttime="20150930 17:27:00.812"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:00.843" starttime="20150930 17:26:53.411"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>50000</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:00.846" level="INFO">Typing text '50000' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:27:00.986" starttime="20150930 17:27:00.845"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:00.987" starttime="20150930 17:27:00.844"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:27:00.989" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:27:01.714" starttime="20150930 17:27:00.988"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:01.716" starttime="20150930 17:27:00.988"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:01.796" starttime="20150930 17:27:01.717"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:27:01.985" starttime="20150930 17:27:01.797"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:01.985" critical="yes" starttime="20150930 17:26:53.411"></status>
+</test>
+<test id="s1-t9" name="EmployeeTest9">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:01.989" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:27:09.810" starttime="20150930 17:27:01.988"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:27:09.855" starttime="20150930 17:27:09.810"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:09.858" starttime="20150930 17:27:09.856"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:27:09.879" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:27:09.880" starttime="20150930 17:27:09.860"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:09.881" starttime="20150930 17:27:09.859"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:09.882" starttime="20150930 17:27:01.987"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>InText</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:09.884" level="INFO">Typing text 'InText' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:27:10.055" starttime="20150930 17:27:09.883"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:10.056" starttime="20150930 17:27:09.882"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:27:10.060" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:27:10.668" starttime="20150930 17:27:10.060"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:10.669" starttime="20150930 17:27:10.058"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:10.739" starttime="20150930 17:27:10.672"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:27:11.130" starttime="20150930 17:27:10.740"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:11.131" critical="yes" starttime="20150930 17:27:01.987"></status>
+</test>
+<test id="s1-t10" name="EmployeeTest10">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:11.135" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:27:19.046" starttime="20150930 17:27:11.134"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:27:19.100" starttime="20150930 17:27:19.047"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:19.102" starttime="20150930 17:27:19.101"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:27:19.124" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:27:19.124" starttime="20150930 17:27:19.103"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:19.125" starttime="20150930 17:27:19.102"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:19.125" starttime="20150930 17:27:11.133"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:19.128" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:27:19.314" starttime="20150930 17:27:19.127"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:19.315" starttime="20150930 17:27:19.126"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:19.317" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:27:19.846" starttime="20150930 17:27:19.317"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:19.847" starttime="20150930 17:27:19.316"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:27:19.850" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:27:20.011" starttime="20150930 17:27:19.849"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:20.013" starttime="20150930 17:27:19.848"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:20.095" starttime="20150930 17:27:20.016"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:27:20.444" starttime="20150930 17:27:20.096"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:20.444" critical="yes" starttime="20150930 17:27:11.132"></status>
+</test>
+<test id="s1-t11" name="EmployeeTest11">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:20.448" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:27:28.421" starttime="20150930 17:27:20.447"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:27:28.472" starttime="20150930 17:27:28.422"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:28.473" starttime="20150930 17:27:28.472"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:27:28.495" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:27:28.496" starttime="20150930 17:27:28.475"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:28.497" starttime="20150930 17:27:28.474"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:28.498" starttime="20150930 17:27:20.446"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:28.500" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:27:28.653" starttime="20150930 17:27:28.499"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:28.654" starttime="20150930 17:27:28.498"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:28.657" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:27:28.737" starttime="20150930 17:27:28.656"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:28.738" starttime="20150930 17:27:28.655"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>40000</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:28.740" level="INFO">Typing text '40000' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:27:28.817" starttime="20150930 17:27:28.740"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:28.817" starttime="20150930 17:27:28.739"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:27:28.819" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:27:29.715" starttime="20150930 17:27:28.819"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:29.716" starttime="20150930 17:27:28.818"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<msg timestamp="20150930 17:27:29.756" level="INFO">Current page contains text 'Kotchaphan'.</msg>
+<status status="PASS" endtime="20150930 17:27:29.756" starttime="20150930 17:27:29.717"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:27:29.957" starttime="20150930 17:27:29.757"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:29.957" critical="yes" starttime="20150930 17:27:20.445"></status>
+</test>
+<test id="s1-t12" name="EmployeeTest12">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:29.962" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:27:39.199" starttime="20150930 17:27:29.961"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:27:39.253" starttime="20150930 17:27:39.200"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:39.255" starttime="20150930 17:27:39.254"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:27:39.306" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:27:39.306" starttime="20150930 17:27:39.256"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:39.307" starttime="20150930 17:27:39.255"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:39.307" starttime="20150930 17:27:29.960"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:39.310" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:27:39.478" starttime="20150930 17:27:39.309"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:39.479" starttime="20150930 17:27:39.308"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:39.482" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:27:39.582" starttime="20150930 17:27:39.481"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:39.583" starttime="20150930 17:27:39.480"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>InText</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:39.585" level="INFO">Typing text 'InText' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:27:39.665" starttime="20150930 17:27:39.584"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:39.667" starttime="20150930 17:27:39.583"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:27:39.669" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:27:40.321" starttime="20150930 17:27:39.669"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:40.321" starttime="20150930 17:27:39.668"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:27:40.630" starttime="20150930 17:27:40.322"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:40.632" critical="yes" starttime="20150930 17:27:29.959"></status>
+</test>
+<test id="s1-t13" name="EmployeeTest13">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:40.637" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:27:48.275" starttime="20150930 17:27:40.636"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:27:48.327" starttime="20150930 17:27:48.277"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:48.328" starttime="20150930 17:27:48.327"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:27:48.349" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:27:48.350" starttime="20150930 17:27:48.330"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:48.350" starttime="20150930 17:27:48.329"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:48.351" starttime="20150930 17:27:40.635"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:48.355" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:27:48.500" starttime="20150930 17:27:48.353"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:48.501" starttime="20150930 17:27:48.352"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:27:48.504" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:27:49.249" starttime="20150930 17:27:48.503"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:49.250" starttime="20150930 17:27:48.502"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:49.339" starttime="20150930 17:27:49.252"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:27:49.521" starttime="20150930 17:27:49.340"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:49.522" critical="yes" starttime="20150930 17:27:40.633"></status>
+</test>
+<test id="s1-t14" name="EmployeeTest14">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:49.526" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:27:57.193" starttime="20150930 17:27:49.525"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:27:57.239" starttime="20150930 17:27:57.194"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:57.242" starttime="20150930 17:27:57.240"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:27:57.261" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:27:57.261" starttime="20150930 17:27:57.243"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:57.261" starttime="20150930 17:27:57.242"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:57.263" starttime="20150930 17:27:49.524"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:57.265" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:27:57.407" starttime="20150930 17:27:57.265"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:57.408" starttime="20150930 17:27:57.264"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>50000</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:57.411" level="INFO">Typing text '50000' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:27:57.492" starttime="20150930 17:27:57.410"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:57.493" starttime="20150930 17:27:57.408"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:27:57.497" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:27:58.113" starttime="20150930 17:27:57.496"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:58.115" starttime="20150930 17:27:57.494"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:27:58.201" starttime="20150930 17:27:58.117"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:27:58.456" starttime="20150930 17:27:58.201"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:27:58.458" critical="yes" starttime="20150930 17:27:49.523"></status>
+</test>
+<test id="s1-t15" name="EmployeeTest15">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:27:58.462" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:28:06.177" starttime="20150930 17:27:58.461"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:28:06.222" starttime="20150930 17:28:06.178"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:28:06.224" starttime="20150930 17:28:06.223"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:28:06.244" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:28:06.244" starttime="20150930 17:28:06.225"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:06.245" starttime="20150930 17:28:06.224"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:06.246" starttime="20150930 17:27:58.460"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:06.249" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:28:06.397" starttime="20150930 17:28:06.248"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:06.398" starttime="20150930 17:28:06.246"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>InText</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:06.402" level="INFO">Typing text 'InText' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:28:06.524" starttime="20150930 17:28:06.401"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:06.525" starttime="20150930 17:28:06.399"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:28:06.527" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:28:07.157" starttime="20150930 17:28:06.527"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:07.158" starttime="20150930 17:28:06.526"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:28:07.235" starttime="20150930 17:28:07.159"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:28:07.435" starttime="20150930 17:28:07.236"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:07.436" critical="yes" starttime="20150930 17:27:58.459"></status>
+</test>
+<test id="s1-t16" name="EmployeeTest16">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:07.440" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:28:15.125" starttime="20150930 17:28:07.439"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:28:15.249" starttime="20150930 17:28:15.126"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:28:15.251" starttime="20150930 17:28:15.250"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:28:15.271" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:28:15.272" starttime="20150930 17:28:15.253"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:15.273" starttime="20150930 17:28:15.252"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:15.275" starttime="20150930 17:28:07.439"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:15.277" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:28:15.425" starttime="20150930 17:28:15.277"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:15.426" starttime="20150930 17:28:15.276"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:15.428" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:28:15.551" starttime="20150930 17:28:15.427"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:15.553" starttime="20150930 17:28:15.426"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:28:15.556" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:28:16.176" starttime="20150930 17:28:15.555"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:16.178" starttime="20150930 17:28:15.554"></status>
+</kw>
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<arguments>
+<arg>Please Enter employee</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:28:16.247" starttime="20150930 17:28:16.180"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:28:16.507" starttime="20150930 17:28:16.248"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:16.508" critical="yes" starttime="20150930 17:28:07.438"></status>
+</test>
+<test id="s1-t17" name="EmployeeTest17">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:16.512" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:28:25.627" starttime="20150930 17:28:16.511"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:28:25.680" starttime="20150930 17:28:25.628"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:28:25.682" starttime="20150930 17:28:25.681"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:28:25.702" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:28:25.703" starttime="20150930 17:28:25.685"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:25.704" starttime="20150930 17:28:25.683"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:25.704" starttime="20150930 17:28:16.510"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:25.707" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:28:25.858" starttime="20150930 17:28:25.706"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:25.859" starttime="20150930 17:28:25.705"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:25.861" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:28:26.432" starttime="20150930 17:28:25.861"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:26.433" starttime="20150930 17:28:25.860"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>5000</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:26.436" level="INFO">Typing text '5000' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:28:26.520" starttime="20150930 17:28:26.435"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:26.521" starttime="20150930 17:28:26.434"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:28:26.523" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:28:26.808" starttime="20150930 17:28:26.522"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:26.808" starttime="20150930 17:28:26.522"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<msg timestamp="20150930 17:28:26.851" level="INFO">Current page contains text 'Kotchaphan'.</msg>
+<status status="PASS" endtime="20150930 17:28:26.851" starttime="20150930 17:28:26.809"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:28:27.053" starttime="20150930 17:28:26.852"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:27.054" critical="yes" starttime="20150930 17:28:16.509"></status>
+</test>
+<test id="s1-t18" name="EmployeeTest18">
+<kw name="Open Browser To Employee" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost/employee/adddata.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:27.059" level="INFO">Opening browser 'Firefox' to base url 'http://localhost/employee/adddata.php'</msg>
+<status status="PASS" endtime="20150930 17:28:34.786" starttime="20150930 17:28:27.058"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20150930 17:28:34.846" starttime="20150930 17:28:34.787"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150930 17:28:34.848" starttime="20150930 17:28:34.847"></status>
+</kw>
+<kw name="Employee Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Add New Staff</arg>
+</arguments>
+<msg timestamp="20150930 17:28:34.868" level="INFO">Page title is 'Add New Staff'.</msg>
+<status status="PASS" endtime="20150930 17:28:34.868" starttime="20150930 17:28:34.849"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:34.869" starttime="20150930 17:28:34.848"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:34.870" starttime="20150930 17:28:27.057"></status>
+</kw>
+<kw name="Input emp_name" library="resource">
+<arguments>
+<arg>Kotchaphan</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_name</arg>
+<arg>${emp_name}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:34.875" level="INFO">Typing text 'Kotchaphan' into text field 'emp_name'</msg>
+<status status="PASS" endtime="20150930 17:28:35.045" starttime="20150930 17:28:34.873"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:35.046" starttime="20150930 17:28:34.871"></status>
+</kw>
+<kw name="Input emp_address" library="resource">
+<arguments>
+<arg>KKU</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_address</arg>
+<arg>${emp_address}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:35.049" level="INFO">Typing text 'KKU' into text field 'emp_address'</msg>
+<status status="PASS" endtime="20150930 17:28:35.169" starttime="20150930 17:28:35.048"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:35.170" starttime="20150930 17:28:35.047"></status>
+</kw>
+<kw name="Input emp_salary" library="resource">
+<arguments>
+<arg>InText</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>emp_salary</arg>
+<arg>${emp_salary}</arg>
+</arguments>
+<msg timestamp="20150930 17:28:35.174" level="INFO">Typing text 'InText' into text field 'emp_salary'</msg>
+<status status="PASS" endtime="20150930 17:28:35.255" starttime="20150930 17:28:35.173"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:35.256" starttime="20150930 17:28:35.172"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>add</arg>
+</arguments>
+<msg timestamp="20150930 17:28:35.259" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" endtime="20150930 17:28:35.947" starttime="20150930 17:28:35.258"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:35.948" starttime="20150930 17:28:35.257"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20150930 17:28:36.203" starttime="20150930 17:28:35.949"></status>
+</kw>
+<status status="PASS" endtime="20150930 17:28:36.204" critical="yes" starttime="20150930 17:28:27.056"></status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" endtime="20150930 17:28:36.208" starttime="20150930 17:25:51.565"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="18">Critical Tests</stat>
+<stat fail="0" pass="18">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Employee" pass="18">Employee</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,47 @@
+*** Settings ***
+Documentation     A resource file with reusable keywords and variables.
+...
+...               The system specific keywords created here form our own
+...               domain specific language. They utilize keywords provided
+...               by the imported Selenium2Library.
+Library           Selenium2Library
+
+*** Variables ***
+${SERVER}         localhost
+${BROWSER}        Chrome
+${DELAY}          0
+${VALID USER}     demo
+${VALID PASSWORD}    mode
+${LOGIN URL}      https://www.facebook.com/login.php
+${WELCOME URL}    https://www.facebook.com/login.php
+${ERROR URL}      http://${SERVER}/error.html
+${MESSAGE}      ลงชื่อเข้าใช้ Facebook
+${PASSWORD}      000
+
+*** Keywords ***
+Open Browser To Facebook
+    Open Browser    https://www.facebook.com/login.php    ${BROWSER}
+    Maximize Browser Window
+    Set Selenium Speed    ${DELAY}
+    Facebook Should Be Open
+
+Facebook Should Be Open
+    Title Should Be    เข้าสู่ระบบ Facebook | Facebook
+
+Go To Facebook
+    Go To    https://www.facebook.com/login.php
+    Facebook Should Be Open
+
+Input email
+    [Arguments]    ${email}
+    Input Text    email    ${email}
+
+Input pass
+    [Arguments]    ${pass}
+    Input Text    pass    ${pass}
+
+Submit Credentials
+    Click Button    u_0_2
+
+CheckLogin Should Be Open
+    Location Should Be    https://www.facebook.com/login.php?login_attempt=1&lwv=100

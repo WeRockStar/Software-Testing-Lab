@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class UnitTest {
+
+	@Test
+	public void testTypical() { // test a typical value in partitions EC
+		assertEquals('A', Grade.getLetterGrade(80));
+		assertEquals('B', Grade.getLetterGrade(72));
+		assertEquals('C', Grade.getLetterGrade(55));
+		assertEquals('F', Grade.getLetterGrade(20));
+	}
+
+}

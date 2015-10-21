@@ -1,0 +1,12 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalTest {	
+
+	@Test
+	public void testCal() {
+		assertEquals(53.925 , cal.calculate(30));
+	}
+
+}

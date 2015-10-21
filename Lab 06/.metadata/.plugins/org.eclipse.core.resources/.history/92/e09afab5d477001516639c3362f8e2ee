@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args) {
+		Calculator cal = new Calculator();
+		Scanner in = new Scanner(System.in);
+		System.out.print("Input : ");
+		int num = in.nextInt();
+		System.out.println("Total : " + cal.calculate(num , "no"));
+	}
+
+	public double calculate(int amount , String nextday) {
+		double rushCharge = 0.0f;
+		float shipcharge;		
+		double total;
+		if (nextday.equals("yes")) {
+			rushCharge = 14.50f;
+		}
+		double tax = amount * .0725;
+		if (amount >= 1000) {
+			shipcharge = amount * 0.06f + rushCharge;
+		} else if (amount >= 200) {
+			shipcharge = amount * 0.08f + rushCharge;
+		} else if (amount >= 100) {
+			shipcharge = 13.25f + rushCharge;
+		} else if (amount >= 50) {
+			shipcharge = 9.95f + rushCharge;
+		} else if (amount >= 25) {
+			shipcharge = 7.25f + rushCharge;
+		} else {
+			shipcharge = 5.25f + rushCharge;
+		}
+		total =  (amount + tax + shipcharge);
+		return total;
+	} // end calculate
+}

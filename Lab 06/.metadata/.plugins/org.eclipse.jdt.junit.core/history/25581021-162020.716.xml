@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalTest" project="Calculator" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="CalTest" time="0.0">
+    <testcase name="ptCal1" classname="CalTest" time="0.0"/>
+    <testcase name="ptCal2" classname="CalTest" time="0.0"/>
+    <testcase name="ptCal3" classname="CalTest" time="0.0"/>
+    <testcase name="ptCal4" classname="CalTest" time="0.0"/>
+    <testcase name="ptCal5" classname="CalTest" time="0.0"/>
+    <testcase name="ptCal6" classname="CalTest" time="0.0"/>
+    <testcase name="ptCal7" classname="CalTest" time="0.0"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,143 @@
+*** Settings ***
+Documentation     A test suite with a single test for valid login.
+...
+...               This test has a workflow that is created using keywords in
+...               the imported resource file.
+Resource          resource.txt
+
+*** Test Cases ***
+EmployeeTest
+    Open Browser To Employee    
+    Submit Credentials       
+    Get Alert Message    Please Enter employee 
+    [Teardown]    Close Browser       
+
+EmployeeTest2
+    Open Browser To Employee
+    Input emp_salary    50000
+    Submit Credentials
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest3
+    Open Browser To Employee
+    Input emp_salary    InText
+    Submit Credentials
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest4
+    Open Browser To Employee    
+    Input emp_address    KKU    
+    Submit Credentials   
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest5
+    Open Browser To Employee    
+    Input emp_address    KKU
+    Input emp_salary    3000
+    Submit Credentials  
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest6
+    Open Browser To Employee    
+    Input emp_address    KKU
+    Input emp_salary    InText
+    Submit Credentials  
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest7
+    Open Browser To Employee    
+    Submit Credentials  
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest8
+    Open Browser To Employee    
+    Input emp_salary    50000
+    Submit Credentials   
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest9
+    Open Browser To Employee
+    Input emp_salary    InText
+    Submit Credentials  
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest10
+    Open Browser To Employee
+    Input emp_name    Kotchaphan
+    Input emp_address    KKU    
+    Submit Credentials  
+    Get Alert Message    Please Enter employee    
+    [Teardown]    Close Browser  
+
+EmployeeTest11
+    Open Browser To Employee
+    Input emp_name    Kotchaphan
+    Input emp_address    KKU
+    Input emp_salary    40000
+    Submit Credentials 
+    Page should contain    Kotchaphan
+    [Teardown]    Close Browser       
+
+EmployeeTest12
+    Open Browser To Employee
+    Input emp_name    Kotchaphan
+    Input emp_address    KKU
+    Input emp_salary    InText
+    Submit Credentials        
+    [Teardown]    Close Browser       
+
+EmployeeTest13
+    Open Browser To Employee
+    Input emp_name    Kotchaphan        
+    Submit Credentials 
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser   
+
+EmployeeTest14
+    Open Browser To Employee
+    Input emp_name    Kotchaphan    
+    Input emp_salary    50000
+    Submit Credentials  
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest15
+    Open Browser To Employee
+    Input emp_name    Kotchaphan    
+    Input emp_salary    InText
+    Submit Credentials  
+    Get Alert Message    Please Enter employee
+    [Teardown]    Close Browser  
+
+EmployeeTest16
+    Open Browser To Employee
+    Input emp_name    Kotchaphan
+    Input emp_address    KKU
+    Submit Credentials   
+    Get Alert Message    Please Enter employee   
+    [Teardown]    Close Browser  
+
+EmployeeTest17
+    Open Browser To Employee
+    Input emp_name    Kotchaphan
+    Input emp_address    KKU
+    Input emp_salary    5000
+    Submit Credentials     
+    Page should contain    Kotchaphan
+    [Teardown]    Close Browser   
+
+EmployeeTest18
+    Open Browser To Employee
+    Input emp_name    Kotchaphan
+    Input emp_address    KKU
+    Input emp_salary    InText
+    Submit Credentials       
+    [Teardown]    Close Browser     

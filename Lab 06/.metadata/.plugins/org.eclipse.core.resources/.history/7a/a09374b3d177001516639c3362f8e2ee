@@ -1,0 +1,25 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CalTest {
+	Calculator cal;
+
+	@Before
+	public void setUp() throws Exception {
+		cal = new Calculator();
+	}
+
+	@Test
+	public void ptCal() {
+		assertEquals(30, cal.calculate(10, "yes"));
+		assertEquals(10, cal.calculate(10, "yes"));
+		assertEquals(30, cal.calculate(10, "yes"));
+		assertEquals(30, cal.calculate(10, "yes"));
+		assertEquals(30, cal.calculate(10, "yes"));
+		assertEquals(30, cal.calculate(10, "yes"));
+		assertEquals(30, cal.calculate(10, "yes"));
+	}
+
+}

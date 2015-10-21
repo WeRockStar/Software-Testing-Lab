@@ -1,0 +1,32 @@
+
+public class Calculator {
+	public static void main(String[] args) {
+		
+	}
+
+	public double calculate(int amount){ 
+		double rushCharge = 0; 
+		double shipcharge;
+		String nextday;
+		if(nextday.equals("yes")) 
+		{
+			rushCharge = 14.50; 
+		} 
+		double tax = amount * .0725; 
+		if (amount >= 1000) {
+			shipcharge = amount * .06 + rushCharge; 
+		}  else if (amount >= 200) {
+			shipcharge = amount * .08 + rushCharge; 
+		}else if (amount >= 100) { 
+			shipcharge = 13.25 + rushCharge; 
+		}else if (amount >= 50)  {
+			shipcharge = 9.95 + rushCharge; 
+		}else if (amount >= 25) {
+			shipcharge = 7.25 + rushCharge; 
+		}else {
+			shipcharge = 5.25 + rushCharge; 
+		} 
+		total = amount + tax + shipcharge; 
+	 	return total; 
+	} //end calculate 
+}

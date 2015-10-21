@@ -1,0 +1,18 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class UnitTest {
+
+	@Test
+	public void pathTesting() { // test a typical value in pt
+		assertEquals('A', Grade.getLetterGrade(95));
+		assertEquals('B', Grade.getLetterGrade(72));
+		assertEquals('C', Grade.getLetterGrade(55));
+		assertEquals('C', Grade.getLetterGrade(53));
+		assertEquals('F', Grade.getLetterGrade(20));
+	}
+	
+	@Test
+	public void 
+}
