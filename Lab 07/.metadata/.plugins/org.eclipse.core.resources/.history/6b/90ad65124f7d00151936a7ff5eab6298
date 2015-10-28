@@ -1,0 +1,20 @@
+
+public class Commission {
+	public static void main(String[] args) {
+		System.out.println(Calculate(15, 15, 15));
+	}
+
+	public static double Calculate(int lock, int stock, int barrel) {
+		double sale = (45 * lock) + (30 * stock) + (25 * barrel);
+		System.out.println("Sale : " + sale);
+		if (sale < 1000)
+			return (sale * 0.1);
+		else if (sale >= 1000)
+			return (0.15 * (sale - 1000)) + (1000 * 0.10);
+		else if (sale > 1800)
+			return (0.2 * (sale - 1800))+ 800;
+		else
+			return 0.0;
+	}
+
+}

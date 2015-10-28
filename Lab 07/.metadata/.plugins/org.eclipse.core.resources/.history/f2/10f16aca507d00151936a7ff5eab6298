@@ -1,0 +1,23 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestTriangle {
+
+	Triangle t;
+
+	@Before
+	public void setUp() throws Exception {
+		t = new Triangle();
+	}
+
+	@Test
+	public void testTriangle() {
+		assertEquals("Scalene", t.isTriangle(3, 4, 5));
+		assertEquals("Scalene", t.isTriangle(4, 1, 2));
+		assertEquals("Scalene", t.isTriangle(5, 5, 5));
+		assertEquals("Scalene", t.isTriangle(3, 2, 2));
+	}
+
+}

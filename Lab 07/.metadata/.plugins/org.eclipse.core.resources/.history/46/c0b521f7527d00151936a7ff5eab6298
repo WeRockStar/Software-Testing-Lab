@@ -1,0 +1,23 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestCommission {
+	Commission com;
+
+	@Before
+	public void setUp() throws Exception {
+		com = new Commission();
+	}
+
+	@Test
+	public void testCom() {
+		assertEquals(50, com.C(5, 5, 5) , 0);
+		assertEquals(175, com.C(15, 15, 15) , 0);		
+		//assertEquals(360, com.Calculate(12, 25, 25) , 0);
+		assertEquals(237.25, com.C(12, 25, 25) , 0);		
+		
+	}
+
+}
