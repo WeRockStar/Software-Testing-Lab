@@ -6,7 +6,9 @@ public class Commission {
 			return (sale * 0.10);
 		} else if (sale >= 1000.0 || sale > 1800.0) {
 			return (double) (0.15 * (sale - 1000)) + (1000 * 0.10);
-		} 
+		} else if () {
+			return (0.2 * (sale - 1800)) + (800 * 0.15) + (1000 * 0.1);
+		}
 		return 0.0;
 
 	}
