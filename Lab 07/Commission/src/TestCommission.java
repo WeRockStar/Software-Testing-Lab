@@ -15,7 +15,7 @@ public class TestCommission {
 	public void testCom() {
 		assertEquals(50.0, com.Calculate(5, 5, 5) , 0);
 		assertEquals(175.0, com.Calculate(15, 15, 15) , 0);		
-		assertEquals(237.250, com.Calculate(12, 25, 25) , 0);				
+		assertEquals(243, com.Calculate(12, 25, 25) , 0);				
 	}
 
 }

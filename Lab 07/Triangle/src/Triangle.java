@@ -1,9 +1,5 @@
 
 public class Triangle {
-	public static void main(String[] args) {
-		System.out.println(isTriangle(3, 2, 2));
-	}
-
 	public static String isTriangle(int a, int b, int c) {
 		String isTria = "";
 		if ((a < b + c) && (b < a + c) & (c < a + b)) {
